@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Library</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ex vitae odio pretium facilisis. Nunc scelerisque, augue et posuere facilisis, felis leo semper nisi, pretium ultrices felis lectus et sem. Fusce sagittis condimentum facilisis</string>
+    <string name="judul_buku">Judul Buku</string>
+    <string name="penulis">Penulis</string>
+    <string name="blurb">Blurb</string>
+    <string name="tahun_terbit">Tahun Terbit</string>
+    <string name="daftar_buku">Daftar Buku</string>
+    <string name="rekomendasi_hari_ini">Rekomendasi Hari ini</string>
+    <string name="koleksi">Koleksi Kamu</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">newminigram</string>
+    <string name="caption">caption</string>
+    <string name="highlight">highlight</string>
+    <string name="add_new_post">Add New Post</string>
+    <string name="bio">Bio</string>
+    <string name="_100">100</string>
+    <string name="username">reinyourheart</string>
+    <string name="nama">nama</string>
+</resources>

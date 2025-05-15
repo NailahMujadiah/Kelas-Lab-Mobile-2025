@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/latte">
+
+    <!-- Konten scrollable -->
+    <ScrollView
+        android:id="@+id/content_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Gambar Buku -->
+            <ImageView
+                android:id="@+id/ivBookCover"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/book12" />
+
+            <!-- Judul Buku -->
+            <TextView
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/font"
+                android:text="@string/judul_buku"
+                android:textSize="18sp"
+                android:paddingBottom="4dp" />
+
+            <!-- CardView untuk info -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="12dp"
+                card_view:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/etAuthor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font"
+                        android:text="@string/penulis"
+                        android:textSize="14sp"
+                        android:paddingBottom="5dp" />
+
+                    <TextView
+                        android:id="@+id/etYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font"
+                        android:text="@string/tahun_terbit"
+                        android:textSize="14sp"
+                        android:paddingBottom="9dp" />
+
+                    <TextView
+                        android:id="@+id/etDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font"
+                        android:text="@string/blurb"
+                        android:textSize="14sp"
+                        android:paddingBottom="9dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tombol Favorit -->
+            <Button
+                android:id="@+id/btnAddToFavorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/font"
+                android:textColor="@color/white"
+                android:text="Tambah ke Favorit"
+                android:layout_gravity="center"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

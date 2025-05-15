@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/latte"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewCover"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="#DDD"
+            android:scaleType="centerCrop"
+            android:contentDescription="Cover Buku" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/font"
+            android:layout_height="wrap_content"
+            android:text="Upload Gambar" />
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font"
+            android:textColorHint="@color/font"
+            android:alpha="0.5"
+            android:hint="Judul Buku" />
+
+        <EditText
+            android:id="@+id/editAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/font"
+            android:textColor="@color/font"
+            android:alpha="0.5"
+            android:hint="Penulis" />
+
+        <EditText
+            android:id="@+id/editYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/font"
+            android:textColor="@color/font"
+            android:alpha="0.5"
+            android:hint="Tahun Terbit"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editBlurb"
+            android:textColorHint="@color/font"
+            android:alpha="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Blurb"
+            android:textColor="@color/font"
+            android:minLines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/font"
+            android:text="Simpan Buku" />
+
+    </LinearLayout>
+</ScrollView>
